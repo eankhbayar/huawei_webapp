@@ -1,5 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
-
+import { Calendar, Home, Inbox, Search, NotebookText, FileQuestion, Bot, Computer,Flag } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -15,48 +14,48 @@ import {
 const items = [
   {
     title: "Dashboard",
-    url: "#",
+    url: "dashboard",
     icon: Home,
   },
   {
     title: "Analytics",
-    url: "#",
+    url: "analytics",
     icon: Inbox,
   },
   {
     title: "Devices",
-    url: "#",
+    url: "devices",
     icon: Calendar,
   },
   {
     title: "Recommendations",
-    url: "#",
+    url: "recommendations",
     icon: Search,
   },
   {
     title: "Forum",
-    url: "#",
-    icon: Settings,
+    url: "forum",
+    icon: NotebookText,
   },
   {
     title: "Report a case",
-    url: "#",
-    icon: Settings,
+    url: "report",
+    icon: Flag,
   },
   {
     title: "AI Assistant",
-    url: "#",
-    icon: Settings,
+    url: "ai-assistant",
+    icon: Bot,
   },
   {
     title: "IT Support",
-    url: "#",
-    icon: Settings,
+    url: "it-support",
+    icon: Computer,
   },
   {
     title: "Feedback",
-    url: "#",
-    icon: Settings,
+    url: "feedback",
+    icon: FileQuestion,
   },
 ]
 
@@ -72,7 +71,7 @@ export function AppSidebar() {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
-                      <item.icon />
+                    <item.icon />
                       <span>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
